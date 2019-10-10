@@ -8,7 +8,7 @@
     "start":"node app.js"
     
   },
-  "engine":{
+  "engines":{
     "node":"10.16.0"
   },
   "author": "",
