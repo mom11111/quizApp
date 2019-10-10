@@ -1,0 +1,22 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: indianred;
+}
+h1{
+    text-align: center;
+    color:white;
+    margin-top: 10%;
+}
+#head{
+    width:70%;
+    background-color: aqua;
+    margin-left:200px;
+}
+#question{
+    width:80%;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top:20px;
+    margin-left:90px;
+}

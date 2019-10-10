@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="getallquestion.css"></head>
+  <style>
+    #form{
+      margin-left:200px;
+    }
+  </style>
+<body>
+<h1><%=name%> starts your quiz</h1>
+
+  <% for (i = yourquestions.length - 1; i >= 0; i--) { %>
+  <form id="form" method="POST" action="/checkanswer">
+  <h2>Question:<strong><%=yourquestions[i].question%></strong></h2>
+  <h2>A.<%=yourquestions[i].option1%></h2>
+  <h2>B.<%=yourquestions[i].option2%></h2>
+  <h2>C.<%=yourquestions[i].option3%></h2>
+  <h2>D.<%=yourquestions[i].option4%></h2>
+  <input type="text" name="answer" placeholder="your answer">
+  <input type="text" name="_id" value="<%=yourquestions[i]._id%>">
+  </div> 
+  <%}%>
+  <br>
+  <button id="button">submit</button>
+</form>
+
+</body>
+</html>

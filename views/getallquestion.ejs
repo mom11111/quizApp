@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="getallquestion.css"></head>
+<body>
+<h1>Your All Questions Are Here</h1>
+
+<div id="head">
+<% for (i = yourallquestions.length - 1; i >= 0; i--) { %>
+<div id="question">
+<h2>Question:<strong><%=yourallquestions[i].question%></strong></h2>
+<h2>Option1:<%=yourallquestions[i].option1%></h2>
+<h2>Option2:<%=yourallquestions[i].option2%></h2>
+<h2>Option3:<%=yourallquestions[i].option3%></h2>
+<h2>Option4:<%=yourallquestions[i].option4%></h2>
+<h2>Answer:<%=yourallquestions[i].answer%></h2>
+</div> 
+<%}%>
+</div>
+
+<form method="GET" action="/addagain" id="form">
+    <button id="button">Add Questions</button> 
+  </form>
+
+</body>
+</html>
